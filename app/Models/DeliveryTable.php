@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class DeliveryTable extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'codigo',
+        'mesa',
+        'descricao',
+        'usu_alt',
+        'status',
+        'tipo_entrega_id',
+        'store_id'
+    ];
+
+    public function delivery_type()
+    {
+        return $this->belongsTo(DeliveryType::class, 'tipo_entrega_id');
+    }
+}

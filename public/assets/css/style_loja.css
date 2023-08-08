@@ -1,0 +1,116 @@
+img.logo {
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 9px;
+}
+
+a.navbar-brand {
+    width: 100px;
+
+
+    height: auto;
+    display: block;
+}
+.logoinfo {
+    width: 104px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 188px;
+    /*background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header h3, .header li a{
+    text-shadow:2px 2px black;
+    font-weight: 700;
+}
+.media.d-flex {
+    display: flex;
+    margin: 9px;
+    border-bottom: 1px solid #ccc;
+    padding: 6px;
+    position: relative;
+}
+.media.d-flex img {
+    margin-right: 17px;
+}
+.media.d-flex i {
+    position: absolute;
+    right: 0;
+}
+.media.d-flex a {
+   text-decoration:none;
+}
+a.accordion-button i {
+    margin-right: 16px;
+
+}
+a.accordion-button {
+    text-decoration: none;
+}
+.produtos {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+}
+.funcionamento {
+    border: 1px solid #ccc;
+    padding: 7px;
+    margin: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.produtos button {
+    position: absolute;
+    right: 0;
+    top: 33%;
+}
+span.itsabor {
+    font-size: smaller;
+    color: #4d4d4d;
+    margin-left: 21px;
+}
+
+@media(max-width: 450px){
+    .header{
+        height: auto;
+    }
+    .header .container.justify-content-end.p-4 {
+        display: flex;
+        flex-direction: column;
+    }
+    ul.navbar-nav.mt-4 {
+        display: flex;
+        flex-direction: row;
+    }
+    li.nav-item.ms-5.text-light {
+        width: max-content;
+        margin-left: 23px !important;
+
+    }
+    .montar-pizza .col-4 {
+        width: -webkit-fill-available;
+    }
+    .row.gy-4.gx-lg-3.justify-content-scenter {
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .container.justify-content-end.mt-4 {
+        margin-top: 35% !important;
+    }
+    .mg-b-10.banmid {
+        position: absolute;
+        top: 364px;
+        width: 94%;
+    }
+}
